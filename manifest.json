@@ -1,0 +1,42 @@
+{
+  "name": "kuick-live-shopping-app",
+  "vendor": "vtex",
+  "version": "0.0.1",
+  "title": "Kuick: LIVE Shopping APP",
+  "description": "Kuick is a LIVE Selling e-Commerce Platform, an interactive experience, LIVE with an instant chat, which brings a great online shopping experience to your customers mobile phones, this is a great option for them to make purchases from the comfort of their home or wherever they are!",
+  "billingOptions": {
+    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true,
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "settingsSchema": {
+    "title": "Kuick: LIVE Shopping APP",
+    "type": "object",
+    "properties": {
+      "storeDomain": {
+        "title": "Store Domain",
+        "description": "Enter current store domain like 'kuickcl'",
+        "type": "string"
+      },
+      "setup": {
+        "title": "Fill the App key and secret of your account",
+        "description": "You need to ganarate new App key and secret from 'Account management/Account' OR follow 'https://developers.vtex.com/vtex-rest-api/docs/getting-started-authentication#creating-the-appkey-and-apptoken' Link"
+      }
+    }
+  },
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "docs": "0.x",
+    "service-worker": "0.x"
+  },
+  "credentialType": "absolute",
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
